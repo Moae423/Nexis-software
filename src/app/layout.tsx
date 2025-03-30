@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const getInter = Inter({
   subsets: ["latin"],
 });
 
@@ -24,11 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}  `}>
-        {/* <Header /> */}
+      <body className={`${getInter.className}  bg-[#000000] `}>
+        <Navbar />
         {children}
-        <div className="h-[31.25rem] w-[31.25rem] sm:w-[68.75rem] rounded-full bg-emerald-300 p-8 absolute top-[2rem] right-[3rem] md:right-[20rem] lg:right-[30rem] blur-[10rem]"></div>
-        <div className="h-[31.25rem] w-[31.25rem] sm:w-[68.75rem] rounded-full bg-pink-300 p-8 absolute top-[2rem] left-[3rem] md:left-[20rem] lg:right-[30rem] blur-[10rem]"></div>
       </body>
     </html>
   );
