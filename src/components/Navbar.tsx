@@ -9,12 +9,12 @@ import { motion } from "motion/react";
 import { easeInOut } from "motion";
 const Navbar = () => {
   return (
-    <header className="fixed top-4 left-0 right-0 w-full z-[999]">
+    <header className="fixed top-4 left-0 right-0 w-full z-[999] ">
       <motion.nav
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        initial={{ y: "-100%", opacity: 0 }}
+        animate={{ y: "0  %", opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className=" flex bg-[#000000] items-center justify-between mx-auto rounded-full  w-[20rem] md:w-[40rem] lg:w-[80rem] py-[0.4rem] px-[1rem] shadow-[0px_10px_10px_rgba(0,0,0,0.5)]"
+        className=" flex bg-[#000000]/80 items-center justify-between mx-auto rounded-full  w-[20rem] md:w-[40rem] lg:w-[80rem] py-[0.4rem] px-[1rem] shadow-[0px_10px_10px_rgba(0,0,0,0.5)]"
       >
         <Link href={"/"} className="hover:scale-105 transition duration-200">
           <div className="flex items-center gap-2 px-[1rem]">
@@ -33,8 +33,8 @@ const Navbar = () => {
         <ul className="hidden lg:flex items-center gap-10">
           {Menu.map((item) => (
             <motion.li
-              whileHover={{ y: -10, scale: 1.2 }}
-              whileTap={{ y: 0 }}
+              whileHover={{ y: "-10%", scale: 1.2 }}
+              whileTap={{ y: "0%" }}
               transition={easeInOut}
               key={item.id}
             >
