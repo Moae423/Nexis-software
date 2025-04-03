@@ -8,8 +8,8 @@ const Homepage = () => {
     <section id="homepage" className="bg-[#edf2f4]  ">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center min-h-screen justify-center gap-[1rem] md:gap-[3rem] px-6 md:px-12 w-full overflow-hidden ">
         <motion.div
-          initial={{ x: "-100%", opacity: 0 }}
-          animate={{ x: "0%", opacity: 1 }}
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
           className="flex flex-col  max-w-md md:max-w-lg  lg:max-w-xl text-center md:text-start"
         >

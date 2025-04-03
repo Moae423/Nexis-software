@@ -52,7 +52,7 @@ export default function Home() {
             <h1 className="text-2xl sm:text-4xl lg:text-5xl max-w-full sm:max-w-lg font-bold">
               Our Comprehensive Insurance Plans
             </h1>
-            <p className="max-w-full sm:max-w-[40rem] font-medium text-sm sm:text-base lg:text-lg">
+            <p className=" max-w-full  lg:max-w-[30rem]  font-medium text-sm sm:text-base  lg:text-lg px-3 lg:px-0">
               At Nexis, we craft tailored insurance solutions designed to
               safeguard your future. Whether it’s your business, health, or
               assets, we provide comprehensive protection so you can focus on
@@ -70,7 +70,7 @@ export default function Home() {
           <motion.div
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1 }}
           >
             {/* HEADER */}
             <div className="flex flex-col sm:flex-row items-center justify-between w-full text-center sm:text-left gap-6 sm:gap-0">
