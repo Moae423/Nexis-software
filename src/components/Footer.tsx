@@ -26,9 +26,9 @@ const Footer = () => {
 
         {/* Content */}
         <div className="relative flex flex-col md:flex-row items-center justify-between bg-black/80 py-4 px-6 md:px-8 rounded-3xl z-20 gap-4 w-full">
-          <h6 className="text-white text-center text-xs md:text-sm">
+          <h1 className="text-white text-center text-xs md:text-sm">
             Copyright &copy; 2025, Made by Daffa Rihadatul Fairus
-          </h6>
+          </h1>
           <div className="flex items-center justify-center gap-4">
             <Link href="#" aria-label="Instagram">
               <BsInstagram
