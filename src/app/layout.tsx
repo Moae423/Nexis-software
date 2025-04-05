@@ -55,6 +55,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="xya6wf6E9hNw2jDSU9huKZ1GGcDO6pMcZM18Qqe0Peo"
+        />
+      </head>
       <body
         className={`${getpoppins.className} ${getInter.className}  bg-[#000000] `}
       >
