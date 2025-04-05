@@ -14,8 +14,38 @@ const getpoppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Nexis Software",
-  description: "Best Software for your activity",
+  title: "Nexis Insurance | Comprehensive Protection for Your Future",
+  description: "Best solution for your activity",
+  keywords: [
+    "Nexis Insurance",
+    "Insurance Indonesia",
+    "Health insurance",
+    "Business protection",
+    "Asset protection",
+    "Nexis Software",
+  ],
+  openGraph: {
+    title: "Nexis Insurance | Comprehensive Protection for Your Future",
+    description: "Best solution for your activity",
+    url: "https://nexis-software.vercel.app/",
+    siteName: "Nexis",
+    images: [
+      {
+        url: "https://nexis-software.vercel.app/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Nexis Software",
+      },
+    ],
+    locale: "id-ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nexis Insurance | Comprehensive Protection for Your Future",
+    description: "Best solution for your activity",
+    images: ["https://nexis-software.vercel.app/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({

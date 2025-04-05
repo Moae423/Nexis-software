@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nexis-software.vercel.app
+
+# Sitemaps
+Sitemap: https://nexis-software.vercel.app/sitemap.xml
